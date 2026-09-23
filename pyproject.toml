@@ -1,0 +1,32 @@
+[project]
+name = "sequiamexico"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Emmanuel", email = "jessepinkman22@ciencias.unam.mx" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "jupyterlab-vim>=4.1.4",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "plotly>=7.1.0",
+    "pynvim>=0.6.0",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "streamlit>=1.64.0",
+]
+
+[project.scripts]
+sequiamexico = "sequiamexico:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+]
