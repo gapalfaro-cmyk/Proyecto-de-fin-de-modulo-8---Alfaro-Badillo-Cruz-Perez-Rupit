@@ -1,0 +1,34 @@
+project:
+  type: website
+
+website:
+  title: "Evolución de la Sequía en México"
+  description: "Análisis territorial y temporal (PRONACOSE)"
+  navbar:
+    background: primary
+    pinned: true
+    left:
+      - href: index.qmd
+        text: 🏠 Índice
+      - href: mis_reportes/Seccion_01.qmd
+        text: ⚙️ Datos
+      - href: mis_reportes/Seccion_02.qmd
+        text: 📈 Evolución Histórica
+      - href: mis_reportes/Seccion-02.qmd
+        text: 🗺️ Patrones Espaciales
+      - href: mis_reportes/Seccion-04.qmd
+        text: 🎯 Conclusiones
+
+format:
+  html:
+    theme: darkly
+    fontsize: 1.15em
+    linestretch: 1.5
+    fontcolor: "#e0e0e0"   
+    toc: true
+    code-fold: true
+    fig-align: center
+    grid:
+      body-width: 1000px
+
+css: styles.css
